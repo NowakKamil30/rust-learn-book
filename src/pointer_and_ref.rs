@@ -57,11 +57,11 @@ fn scope() {
 
     let r1 = &s;
     let r2 = &s;
-    //let r3 = &mut s; // nie mozna tutaj uzyć ponieważ mamy już 2 referencje inmutable w scopie
+    //let r3 = &mut s; // We can't create it here because we have 2 immutable reference in this scope
 
     println!("{} {}", r1, r2);
 
-    let r3 = &mut s; // można użyc bo jestesmy już po za scopem uzycia r1 i r2
+    let r3 = &mut s; // we can create it here because of scope of both variables is ended
 
     r3.pop();
 
