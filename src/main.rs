@@ -15,20 +15,19 @@ mod cli;
 mod fib;
 
 fn main() {
-    println!("Hello, world!");
-    print::run();
-    vars::run();
-    types::run();
-    strings::run();
-    tuples::run();
-    arrays::run();
-    vectors::run();
-    conditional::run();
-    loops::run();
-    functions::run();
-    pointer_and_ref::run();
-    structs::run();
+    // print::run();
+    // vars::run();
+    // types::run();
+    // strings::run();
+    // tuples::run();
+    // arrays::run();
+    // vectors::run();
+    // conditional::run();
+    // loops::run();
+    // functions::run();
+    // pointer_and_ref::run();
+    // structs::run();
     enums::run();
-    cli::run();
-    fib::run(100);
+    // cli::run();
+    // fib::run(100);
 }
