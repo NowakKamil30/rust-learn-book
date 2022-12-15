@@ -1,3 +1,5 @@
+use rand::Rng;
+
 pub fn run() {
     let mut count = 0;
 
@@ -27,4 +29,14 @@ pub fn run() {
     for x in 0..1000 {
         println!("{}", x * x * x);
     }
+
+    //loops can return a value
+    let result = loop {
+        let rand_value = rand::thread_rng().gen_range(0..240);
+        if rand_value > 120 && rand_value < 150 {
+            break rand_value;
+        }
+    };
+
+    println!("returned value fro loop {}", result);
 }
